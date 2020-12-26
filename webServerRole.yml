@@ -1,0 +1,8 @@
+- hosts: webserver
+  roles:
+          - role: "webServerSetup"
+
+- hosts: loadbalancer
+  roles:
+          - role: "loadbalancer"
+ 

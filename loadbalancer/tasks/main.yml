@@ -1,0 +1,15 @@
+---
+# tasks file for loadbalancer
+
+- package:
+        name: "haproxy"
+        state: present
+
+
+- service:
+        name: "haproxy"
+        state: started
+
+
+
+

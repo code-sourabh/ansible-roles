@@ -1,0 +1,15 @@
+---
+# tasks file for webServerSetup
+
+- package:
+        name: "httpd"
+        state: present
+- copy:
+        src: "index.php"
+        dest: "/var/www/html"
+
+- service:
+        name: "httpd"
+        state: restarted
+
+
